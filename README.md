@@ -1,0 +1,2 @@
+# AngularCart
+AngularJS完成京东App购物车单页面项目
