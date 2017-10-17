@@ -1,0 +1,514 @@
+/* Empty. Add your own CSS if you like */
+.bg-grey{ background-color: #e8e8ee;}
+.bg-white{ background-color: #fff;}
+
+.txt-left{ text-align: left;}
+.txt-right{ text-align: right;}
+.txt-center{ text-align: center;}
+
+.no-margin{ margin: 0!important;}
+.no-padding{ padding: 0!important;}
+
+img{ width: 100%;height: auto;}
+.pull-left{ float: left;}
+.pull-right{ float: right;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{*+height:1%;}
+
+button{border: none;background-color: transparent;}
+
+
+/* 通用 start */
+/*多选项*/
+.check-btn{
+	font-size: 14px;
+}
+.check-btn .checkbox-icon {
+    width: 18px;
+    height: 18px;
+}
+.check-btn.item {
+    padding: 12px;
+}
+.check-btn.item-checkbox {
+    padding-left: 45px;
+}
+.check-btn.item-checkbox .checkbox{
+	margin-top: -17px;
+}
+.check-btn.item-checkbox .checkbox input:checked:before, .check-btn.item-checkbox .checkbox input:checked + .checkbox-icon:before {
+    background: #16c360;
+    border-color: #16c360;
+}
+.check-btn.item-checkbox .checkbox input:after, .check-btn.item-checkbox .checkbox-icon:after {
+    width: 8px;
+}
+/*多选项删除样式*/
+.onecheck.item-checkbox {padding-left: 0;}
+.onecheck.item-checkbox .checkbox{margin: 0;padding:0;top:0;left:0;width: 18px;}
+.onecheck{
+	margin: 0;
+	width: 18px;
+	padding: 9px;
+	border: none;
+	background: none;
+}
+/* 通用 end */
+
+
+.shopcart-none .icon {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 50px auto 15px;
+    background: url(../img/icon_feedback.png) no-repeat 0 -150px;
+    background-size: 50px 200px;
+}
+.shopcart-none .prompt{
+	font-size: 12px;
+}
+.shopcart-none .btn-mod{
+	background-color: #f3f3f3;
+	border: 1px solid #ddd;
+	color: #333;
+	font-size: 14px;
+	min-height: auto;
+}
+
+.shopcart-have .tool-bar{
+	position: relative;
+	background-color: #f2f2f7;
+	border-bottom: 1px solid #d1d1d1;
+}
+.shopcart-have .tool-bar .address{
+	height: 45px;
+}
+.shopcart-have .tool-bar .address .address-btn{
+	height: inherit;
+	line-height: 1;
+	color: #666;
+}
+.shopcart-have .tool-bar .address .address-btn .icon{
+	margin-right: 5px;
+}
+.shopcart-have .tool-bar .select{
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0);
+	height: 45px;
+}
+.shopcart-have .tool-bar .select .selecttype{
+	margin: 12px 0 0 0;
+	padding: 2px 3px 4px;
+	font-size: 12px;
+	background-color: #fff;
+	border-radius: 0;
+	border: none;
+}
+.shopcart-have .tool-bar .handle{
+	height: 45px;
+}
+.shopcart-have .tool-bar .handle .btn{
+	padding: 0 2px;
+	height: inherit;
+	line-height: 1;
+	color: #3985ff;
+}
+.shopcart-list>.item{
+	padding: 0 0 0 10px;
+}
+.shopcart-list .item .title{
+	position: relative;
+	height: 50px;
+	line-height: 50px;
+	font-size: 12px;
+	border-bottom: 1px solid #e7e7e7;
+}
+.shopcart-list .item .title:after{
+	content: '';
+	position: absolute;
+	top: 32px;
+	left: 15px;
+	width: 1px;
+	height: 20px;
+	background-color: #e7e7e7;
+}
+.shopcart-list .item .title .tag{
+	margin-right: 5px;
+	padding: 0 6px;
+	color: #fff;
+	background-color: #e93b3d;
+}
+.shopcart-list .item .body .body-choose{
+	position: relative;
+    top: -1px;
+	width: 30px;
+	height: 60px;
+	background: #fff;
+}
+.shopcart-list .item .body .body-choose:before{
+	content: '';
+	position: absolute;
+	left: 15px;
+	width: 1px;
+	height: 60px;
+	background-color: #e7e7e7;
+}
+
+.shopcart-list .item .body .body-choose .onecheck.item-checkbox {top: 50px;left: 6px;}
+
+.shopcart-list .item .body .body-desc .cover-img{
+	float: left;
+	margin-right: 10px;
+	width: 75px;
+	height: 75px;
+}
+.shopcart-list .item .body .body-desc .body-desc-con{
+	display: table-cell;
+}
+.shopcart-list .item .body .body-desc .body-desc-con .name{
+	line-height: 1.5;
+	font-size: 12px;
+	font-weight: 500;
+	color: #333;
+	white-space: normal;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+}
+.shopcart-list .item .body .body-desc .body-desc-con .color span{
+	display: inline-block;
+	margin: 7px 0;
+	padding: 6px;
+	line-height: 1;
+	font-size: 12px;
+	border: 1px solid #e7e7e7;
+}
+.shopcart-list .item .body .body-desc .body-desc-con .price{
+	font-size: 12px;
+	color: #e93b3d;
+}
+.shopcart-list .item .body .body-desc .body-desc-con .price em{
+	font-size: 14px;
+}
+.shopcart-list .item .body .body-desc .body-desc-con .nums{
+	margin-top: 5px;
+}
+.shopcart-list .item .body .body-desc .body-desc-con .nums .num-wrap .btn{
+	background-color: #fff;
+}
+.shopcart-list .item .body .body-desc .body-desc-con .nums .num-wrap .bugNum{
+	width: 40px;
+}
+
+.shopcart-list .item .kind{
+	padding-left: 30px;
+	padding-right: 10px;
+	left: 30px;
+}
+.shopcart-list .item .kind .kind-con{
+	background-color: #fef5f5;
+	padding: 10px;
+}
+.shopcart-list .item .kind .kind-con p{
+	font-size: 12px;
+}
+.shopcart-list .item .kind .kind-con p>em{
+	margin-right: 10px;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.search-no{
+	text-align: center;
+}
+.search-no .icon{
+    font-size: 80px;
+    color: #ccc;
+}
+.search-no p{
+	color: #666;
+	font-size: 12px;
+}
+
+.shopcart-result{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+	background-color: rgba(255, 255, 255, 0.95);
+	z-index: 8;
+}
+.shopcart-result .settlement .check-all{
+	width: 40px;
+	text-align: center;
+}
+.shopcart-result .settlement .check-all .onecheck{
+	left: 50%;
+	margin-left: -9px;
+	margin-top: 8px;
+	padding: 9px;
+}
+.shopcart-result .settlement .check-all span{
+	font-size: 12px;
+}
+.shopcart-result .settlement .btn-count{
+	width: 100px;
+	height: 50px;
+	background-color: #e4393c;
+	border: none;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 700;
+}
+.shopcart-result .settlement .btn-count >em{
+	font-size: 12px;
+	font-weight: 500;
+}
+.shopcart-result .settlement .btn-count.disabled{
+	color: #999;
+	background-color: #d4d4d4;
+}
+.shopcart-result .settlement .total{
+	margin-right: 10px;
+	text-align: right;
+}
+.shopcart-result .settlement .total .value{
+	margin: 6px 0 3px;
+	font-size: 16px;
+	font-weight: 700;
+}
+.shopcart-result .settlement .total .value .num{
+	color: #e4393c;
+}
+.shopcart-result .settlement .total .tag{
+	margin: 0;
+	color: #666;
+}
+
+.shopcart-result .delbar .check-all{
+	width: 40px;
+	text-align: center;
+}
+.shopcart-result .delbar .check-all .onecheck{
+	left: 50%;
+	margin-left: -9px;
+	margin-top: 8px;
+	padding: 9px;
+}
+.shopcart-result .delbar .check-all span{
+	font-size: 12px;
+}
+.shopcart-result .delbar .btnlist .btn{
+	margin: 11px 11px 11px 0;
+	width: 70px;
+	height: 28px;
+	font-size: 12px;
+	font-weight: 700;
+	color: #fff;
+	border: none;
+	border-radius: 3px;
+}
+.shopcart-result .delbar .btnlist .btn.collect{
+	background-color: #666;
+}
+.shopcart-result .delbar .btnlist .btn.del{
+	background-color: #f09227;
+}
+
+
+
+.mod-recommend{
+	margin: 25px 0 60px; 
+}
+.mod-recommend .title{
+	position: relative;
+	font-size: 14px;
+	font-weight: normal;
+	text-align: center;
+}
+.mod-recommend .title:before{
+	content: '';
+	position: absolute;
+	left: 50%;
+	margin-left: -35%;
+	top: 8px;
+	width: 70%;
+	height: 1px;
+	background-color: #7c7c7e;
+}
+.mod-recommend .title span{
+	position: relative;
+	display: inline-block;
+	padding: 0 10px;
+	text-align: center;
+	background-color: #e8e8ee;
+}
+.mod-recommend .icon-may{
+	margin: 0 5px 0 0;
+	font-size: 14px;
+}
+.mod-recommend .list-goods .list{
+	margin: 0 5px;
+}
+.mod-recommend .list-goods .item{
+	float: left;
+	margin: 0;
+	padding: 0 5px 10px;
+	width: 50%;
+	border: none;
+	background: none;
+	box-sizing: border-box;
+}
+.mod-recommend .list-goods .item .item-con{
+	background-color: #fff;
+}
+.mod-recommend .list-goods .item .item-con .cover-img{
+	line-height: 0;
+}
+.mod-recommend .list-goods .item .item-con .name{
+	margin: 10px 10px 0 10px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #333;
+	white-space: normal;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+}
+.mod-recommend .list-goods .item .item-con .other .price{
+	font-size: 12px;
+	color: #e93b3d;
+}
+.mod-recommend .list-goods .item .item-con .other .price em{
+	font-size: 14px;
+}
+
+
+
+.goods-detail{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.6);
+	z-index: 9;
+}
+.goods-con{
+	position: absolute;
+	width: 100%;
+	min-height: 50%;
+	bottom: 0;
+	background-color: #fff;
+}
+.goods-con .desc{
+	margin-bottom: 50px;
+}
+.goods-con .header{
+	margin-top: -20px;
+	height: 90px;
+}
+.goods-con .header .goods-close{
+	position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 16px;
+}
+.goods-con .header .goods-img{
+	float: left;
+	margin: 0 10px 0 0;
+	width: 90px;
+	line-height: 0;
+}
+.goods-con .header .goods-img img{
+	border-radius: 10px;
+}
+.goods-con .header .goods-body .goods-price{
+	margin: 0;
+	padding: 30px 0 10px;
+	color: #e93b3d;
+}
+.goods-con .header .goods-body .goods-price em{
+	font-size: 14px;
+}
+.goods-con .header .goods-body .goods-select{
+	margin: 0;
+}
+.goods-con .header .goods-body .goods-select span{
+	color: #999;
+}
+
+.goods-con .colors .title{
+	font-size: 12px;
+}
+.goods-con .colors .choose>li{
+	float: left;
+	padding: 0 10px 10px 0;
+}
+.goods-con .colors .choose>li>span{
+	display: block;
+	padding: 4px 15px;
+	font-size: 12px;
+	font-weight: 700;
+	background-color: #f3f2f8;
+	border-radius: 4px;
+}
+.goods-con .colors .choose>li.on>span{
+	color: #fff;
+	background-color: #e93b3d;
+}
+
+.goods-con .nums .title{
+	font-size: 12px;
+	line-height: 30px;
+}
+
+/* 选择数量组件 start */
+.num-wrap .btn{
+	float: left;
+	width: 30px;
+	height: 30px;
+	line-height: 1;
+	background-color: #f3f1f8;
+	border: 1px solid #e5e5e5;
+}
+.num-wrap .minus{
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.num-wrap .plus{
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.num-wrap .value{
+	float: left;
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+	box-sizing: border-box;
+}
+.num-wrap .value .bugNum{
+	width: 50px;
+	height: 28px;
+	text-align: center;
+	border: none;
+}
+/* 选择数量组件 end */
+
+.goods-con .btn-addCart{
+	position: absolute;
+	bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
